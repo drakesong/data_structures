@@ -1,5 +1,5 @@
 public class TimingTest {
-	//Created by Professor Justin Li
+//Created by Professor Justin Li
 
     private static int NUM_TRIALS = 100;
 

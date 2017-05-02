@@ -1,6 +1,5 @@
 public class AVLTreeMap implements Map {
-
-	// I am attempting the extra credit.
+// I am attempting the extra credit.
 	
 	class Node {
 		String key;
