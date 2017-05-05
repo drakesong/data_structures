@@ -5,10 +5,8 @@
 #### Occidental College, Los Angeles, California
 
 ###### HW Handout:
-This homework is out of 150 points, with 15 points of extra credit. Any code and writing you submit must be your work and yours alone.
 
-3. (50 points) Implement the following graph search algorithms. For the purpose of this assignment, if two nodes have the same depth/breadth/priority, your code should select nodes based on their alphabetical
-ordering.
+1. Implement the following graph search algorithms. For the purpose of this assignment, if two nodes have the same depth/breadth/priority, your code should select nodes based on their alphabetical ordering.
 
     a. Depth First Search
   
@@ -48,6 +46,3 @@ ordering.
 
   * EightPuzzle provides an application of search algorithms with sliding puzzles. Several starting puzzles are in there, including an impossible puzzle. For all but the last, running main() should cause the goal board to be printed out at the end. If you are interested in solving 8-puzzle, consider doing the challenge question below.
 
-4. (0 points challenge question) Implement UniformCostSearchWithPath in SearchAlgorithms. Instead of
-returning a NodeList of all Nodes visited, this method returns the path from the start node to the end node.
-For the example graph above, this function should return the list Z, X, Y, V, U, S.
