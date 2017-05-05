@@ -1,5 +1,6 @@
 import java.util.Iterator;
 import java.util.LinkedList;
+//Created by Professor Justin Li
 
 public class NodeList {
 

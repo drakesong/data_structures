@@ -1,5 +1,6 @@
 import java.util.Iterator;
 import java.util.HashMap;
+//Created by Professor Justin Li
 
 public class Graph {
 	HashMap<String, Node> nodes = new HashMap<String, Node>();

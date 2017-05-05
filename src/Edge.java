@@ -1,4 +1,5 @@
 import java.lang.Comparable;
+//Created by Professor Justin Li
 
 public class Edge {
 

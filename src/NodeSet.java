@@ -1,5 +1,6 @@
 import java.lang.Comparable;
 import java.util.HashSet;
+//Created by Professor Justin Li
 
 public class NodeSet {
 

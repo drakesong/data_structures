@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Iterator;
+//Created by Professor Justin Li
 
 public class EightPuzzle extends Graph {
 
