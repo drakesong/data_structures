@@ -39,21 +39,21 @@ public class Main {
 
 		// depth first search
 		result = algo.DepthFirstSearch(g.getNode("Z"), g.getNode("S"));
-		for (Iterator<Node> it = result.iterator(); it.hasNext(); ) {
+		for (Iterator<Node> it = result.iterator(); it.hasNext();) {
 			System.out.println(it.next().getValue());
 		}
 		System.out.println();
 
 		// breadth first search
 		result = algo.BreadthFirstSearch(g.getNode("Z"), g.getNode("S"));
-		for (Iterator<Node> it = result.iterator(); it.hasNext(); ) {
+		for (Iterator<Node> it = result.iterator(); it.hasNext();) {
 			System.out.println(it.next().getValue());
 		}
 		System.out.println();
 
 		// uniform cost search
 		result = algo.UniformCostSearch(g.getNode("Z"), g.getNode("S"));
-		for (Iterator<Node> it = result.iterator(); it.hasNext(); ) {
+		for (Iterator<Node> it = result.iterator(); it.hasNext();) {
 			System.out.println(it.next().getValue());
 		}
 		System.out.println();

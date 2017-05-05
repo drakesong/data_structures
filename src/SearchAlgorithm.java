@@ -10,8 +10,8 @@ public class SearchAlgorithm {
 		n.add(start);
 		NodePriorityQueue q = new NodePriorityQueue();
 		while (!stack.isEmpty()) {
-			Node a = stack.get(stack.size()-1);
-			stack.remove(stack.size()-1);
+			Node a = stack.get(stack.size() - 1);
+			stack.remove(stack.size() - 1);
 			Iterator<Edge> v = a.getChildren();
 			if (a.equals(end)) {
 				break;
@@ -33,8 +33,8 @@ public class SearchAlgorithm {
 		n.add(start);
 		NodePriorityQueue q = new NodePriorityQueue();
 		while (!queue.isEmpty()) {
-			Node a = queue.get(queue.size()-1);
-			queue.remove(queue.size()-1);
+			Node a = queue.get(queue.size() - 1);
+			queue.remove(queue.size() - 1);
 			Iterator<Edge> v = a.getChildren();
 			if (a.equals(end)) {
 				break;
@@ -52,7 +52,7 @@ public class SearchAlgorithm {
 	}
 
 	public NodeList UniformCostSearch(Node start, Node end) {
-    	NodeList n = new NodeList();
+		NodeList n = new NodeList();
 		NodePriorityQueue q = new NodePriorityQueue();
 		q.add(start, 1);
 		while (!q.isEmpty()) {
@@ -69,11 +69,11 @@ public class SearchAlgorithm {
 			while (v.hasNext()) {
 				Edge curEdge = v.next();
 				q.add(curEdge.getChild(), curEdge.getWeight());
-			}		
+			}
 		}
-		return n; 		
+		return n;
 	}
-	
+
 	public NodeList UniformCostSearchWithPath(Node start, Node end) {
 		// 0 point challenge question
 		return new NodeList();

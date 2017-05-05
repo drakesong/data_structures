@@ -7,10 +7,12 @@ public class NodePriorityQueue {
 	private class Item implements Comparable<Item> {
 		public Node node;
 		public int priority;
+
 		private Item(Node node, int priority) {
 			this.node = node;
 			this.priority = priority;
 		}
+
 		public int compareTo(Item other) {
 			if (this.priority != other.priority) {
 				return this.priority - other.priority;
@@ -33,11 +35,11 @@ public class NodePriorityQueue {
 	public boolean isEmpty() {
 		return this.pq.isEmpty();
 	}
-	
+
 	public int peekPriority() {
 		return this.pq.peek().priority;
 	}
-	
+
 	public Node peekNode() {
 		return this.pq.peek().node;
 	}

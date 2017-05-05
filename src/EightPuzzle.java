@@ -26,17 +26,13 @@ public class EightPuzzle extends Graph {
 				first = index;
 				second = space;
 			}
-			return this.value.substring(0, first) +
-				this.value.substring(second, second + 1) +
-				this.value.substring(first + 1, second) +
-				this.value.substring(first, first + 1) +
-				this.value.substring(second + 1, 9);
+			return this.value.substring(0, first) + this.value.substring(second, second + 1)
+					+ this.value.substring(first + 1, second) + this.value.substring(first, first + 1)
+					+ this.value.substring(second + 1, 9);
 		}
 
 		public String getValue() {
-			return this.value.substring(0, 3) + "\n" +
-				this.value.substring(3, 6) + "\n" +
-				this.value.substring(6, 9) + "\n";
+			return this.value.substring(0, 3) + "\n" + this.value.substring(3, 6) + "\n" + this.value.substring(6, 9) + "\n";
 		}
 
 		public Iterator<Edge> getChildren() {
@@ -97,32 +93,26 @@ public class EightPuzzle extends Graph {
 		SearchAlgorithm algo = new SearchAlgorithm();
 
 		Node start = puzzle.getGoalNode();
-		//start = puzzle.getGoalNode(); // trivial
+		// start = puzzle.getGoalNode(); // trivial
 		start = puzzle.getNode("1234 5678"); // easy
-		//start = puzzle.getNode("7245 6831"); // hard
-		//start = puzzle.getNode("2831647 5"); // unsolvable!
+		// start = puzzle.getNode("7245 6831"); // hard
+		// start = puzzle.getNode("2831647 5"); // unsolvable!
 		Node end = puzzle.getGoalNode();
 
 		NodeList result;
 		result = algo.BreadthFirstSearch(start, end);
-		for (Iterator<Node> it = result.iterator(); it.hasNext(); ) {
+		for (Iterator<Node> it = result.iterator(); it.hasNext();) {
 			System.out.println(it.next().getValue());
 		}
 		System.out.println();
 
 		/*
-		// uncomment if you do the challenge question
-		NodeList result;
-		result = algo.UniformCostSearchWithPath(start, end);
-		if (result != null) {
-			for (Iterator<Node> it = result.iterator(); it.hasNext(); ) {
-				System.out.println(it.next().getValue());
-			}
-			System.out.println();
-		} else {
-			System.out.println("Puzzle is unsolvable:");
-			System.out.println(start.getValue());
-		}
-		*/
+		 * // uncomment if you do the challenge question NodeList result; result =
+		 * algo.UniformCostSearchWithPath(start, end); if (result != null) { for
+		 * (Iterator<Node> it = result.iterator(); it.hasNext(); ) {
+		 * System.out.println(it.next().getValue()); } System.out.println(); } else
+		 * { System.out.println("Puzzle is unsolvable:");
+		 * System.out.println(start.getValue()); }
+		 */
 	}
 }

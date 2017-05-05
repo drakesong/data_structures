@@ -31,7 +31,7 @@ public class NodeList {
 	}
 
 	public boolean contains(Node node) {
-		for (Iterator<Node> it = this.iterator(); it.hasNext(); ) {
+		for (Iterator<Node> it = this.iterator(); it.hasNext();) {
 			if (node.equals(it.next())) {
 				return true;
 			}
