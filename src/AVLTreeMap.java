@@ -1,6 +1,6 @@
 public class AVLTreeMap implements Map {
-// I am attempting the extra credit.
-	
+	// I am attempting the extra credit.
+
 	class Node {
 		String key;
 		String value;
@@ -104,14 +104,14 @@ public class AVLTreeMap implements Map {
 		Node q = z.left.right;
 		Node r = z;
 		Node s = z.left;
-		
+
 		s.right = r;
 		r.left = q;
-		
+
 		int a = 0;
 		int b = 0;
 		int c = 0;
-		
+
 		if (s.right.left != null) {
 			a = s.right.left.height;
 		}
@@ -135,7 +135,7 @@ public class AVLTreeMap implements Map {
 
 		r.right = q;
 		s.left = r;
-		
+
 		int a = 0;
 		int b = 0;
 		int d = 0;
@@ -150,10 +150,9 @@ public class AVLTreeMap implements Map {
 			d = s.right.height;
 		}
 
-		
 		s.left.height = max(a, b) + 1;
 		s.height = max(s.left.height, d) + 1;
-		
+
 		return s;
 
 	}
@@ -162,9 +161,9 @@ public class AVLTreeMap implements Map {
 		if (a > b) {
 			return a;
 		}
-		return b; 
+		return b;
 	}
-	
+
 	public String get(String key) {
 		if (getRecur(root, key) != null) {
 			return getRecur(root, key).value;
