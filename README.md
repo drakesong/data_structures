@@ -5,9 +5,8 @@
 #### Occidental College, Los Angeles, California
 
 ###### HW Handout:
-This homework is out of 150 points, with 15 points of extra credit. Any code and writing you submit must be your work and yours alone.
 
-1. (135 points) Recall that a Map is an ADT that allows you to associate a value with a key. As an example, think of an English dictionary - every word has a definition, you can look up the definition with the word, and the words are unique. In this case, the key would be the words, and the value would be the definition of each word.
+1. Recall that a Map is an ADT that allows you to associate a value with a key. As an example, think of an English dictionary - every word has a definition, you can look up the definition with the word, and the words are unique. In this case, the key would be the words, and the value would be the definition of each word.
 
     This main question of the homework asks you to implement the AVLTreeMap class, which creates a map based on the self-balancing AVL tree. A number of starter files have been provided for you:
 
@@ -72,8 +71,8 @@ This homework is out of 150 points, with 15 points of extra credit. Any code and
 
 * TimingTest.java: This file contains some code to insert a large number of keys into your tree, and prints out the amount of time required to do so. You will need to modify this file for Question 2. See below for more details.
 
-2. (15 points) Experiment with your AVLTreeMap and compare its performance to the SortedArrayMap using the code in TimingTest.java. The main of this file adds numElements keys to each type of Map, but does so in two ways: forwardTest adds numbers from 0 up to numElements, while backwardTest adds numbers from numElements down to 0. After each test, the amount of time required (in milliseconds) is printed out.
+2. Experiment with your AVLTreeMap and compare its performance to the SortedArrayMap using the code in TimingTest.java. The main of this file adds numElements keys to each type of Map, but does so in two ways: forwardTest adds numbers from 0 up to numElements, while backwardTest adds numbers from numElements down to 0. After each test, the amount of time required (in milliseconds) is printed out.
 
     What happens when you change the numElements variable to change the number of elements added to the tree? When does your AVLTreeMap become faster than the SortedArrayMap? How does the speed of adding numbers forwards or backwards change the timing? Why? Include a table of your timing data in your answer to this question.
 
-3. (15 extra points) Do Question 1, but where the Node class does not have a parent pointer. The appropriate line to delete in the Node class has been identified for you. Practically, this means that all your functions must be recursive. Please write that you are attempting the extra credit in your submission.
+3. Do Question 1, but where the Node class does not have a parent pointer. The appropriate line to delete in the Node class has been identified for you. Practically, this means that all your functions must be recursive. Please write that you are attempting the extra credit in your submission.
