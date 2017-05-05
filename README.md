@@ -24,7 +24,7 @@
   * Edge.getChild() returns the child Node of an edge.
   * Edge.getWeight() returns the weight of an edge.
 
-  The Graph class is provided mostly to allow easy testing; an example of how to use the class is in Main. The class also has a print() method, which prints out a Graphviz representation of the graph. You can visualize the output of the print() method in the Graph class using the viz.js website (http://viz-js.com/).
+  The Graph class is provided mostly to allow easy testing; an example of how to use the class is in Main. The class also has a print() method, which prints out a Graphviz representation of the graph.
 
 * NodeList, NodeSet, NodeNodeMap, NodeIntMap, NodePriorityQueue are utility classes that implement subsets of the Java List, Set, Map, and PriorityQueue interfaces/classes, except specialized for Nodes (so you don't have to deal with generics). The NodePriorityQueue class has three slightly modified methods:
 
